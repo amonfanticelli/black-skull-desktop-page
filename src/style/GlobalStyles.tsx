@@ -6,7 +6,8 @@ export const GlobalStyle = createGlobalStyle`
 
   //typography
 
-  --font-inter: 'Inter', sans-serif;
+  --font-barlow: 'Barlow', sans-serif;
+  --font-roboto-condensed: 'Roboto Condensed', sans-serif;
  
 
   
@@ -43,10 +44,6 @@ html {
     margin: 0;
     padding: 0;
     font-weight: normal;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-lexend)
   }
 
   

@@ -1,5 +1,13 @@
-import { HeaderTalkToUs } from "./style";
+import { Header, ContactSpan } from "./style";
 
-export const Header = () => {
-  return <HeaderTalkToUs></HeaderTalkToUs>;
+export const HeaderTalkToUs = () => {
+  return (
+    <Header>
+      <ContactSpan>fale conosco</ContactSpan>
+      <div>
+        {" "}
+        <span></span>
+      </div>
+    </Header>
+  );
 };
