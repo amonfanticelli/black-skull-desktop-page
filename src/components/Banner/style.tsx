@@ -67,6 +67,7 @@ export const BannerButton = styled.button`
   width: 120px;
   display: inline-block;
   border-radius: 4px;
+  border: none;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-family: var(--font-barlow);
