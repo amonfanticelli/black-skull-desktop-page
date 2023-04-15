@@ -38,7 +38,9 @@ const borderGrow = keyframes`
 
 export const NavigationLinks = styled.nav`
   height: 72px;
-
+  border: 1px solid red;
+  @media screen and (max-width: 1279px) {
+  }
   ul {
     display: flex;
 

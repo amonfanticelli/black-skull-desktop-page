@@ -1,29 +1,21 @@
 import styled, { keyframes } from "styled-components";
-import { ButtonArrowLeft } from "../ButtonArrowLeft";
 
-const paint = keyframes`  
-  from {
-    background-color: #f1f1f1;
-  }
-  to {
-    background-color: orange;
-  }
-`;
 const zoom = keyframes`  
   from {
     transform: scale(1);
   }
   to {
-    transform: scale(1.2);
+    transform: scale(1.5);
   }
 `;
-const paint2 = keyframes`
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
+
+export const ListWrapper = styled.div`
+  margin-top: 56px;
+  margin-bottom: 64px;
+  padding: 0px 56px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 `;
 
 export const List = styled.ul`
@@ -31,11 +23,10 @@ export const List = styled.ul`
   justify-content: center;
   gap: 20px;
   border: 1px solid red;
-  margin-top: 56px;
   position: relative;
-  max-width: 1200px;
   width: 100%;
-  border: 1px solid red;
+  max-width: 1210px;
+
   li {
     display: flex;
     flex-direction: column;
@@ -46,7 +37,7 @@ export const List = styled.ul`
       display: flex;
       padding: 35px 35px;
       border: transparent;
-      background: #f1f1f1;
+      background: var(--colors-background);
       border-radius: 100px;
       &:before {
         content: "";
@@ -54,8 +45,6 @@ export const List = styled.ul`
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(0);
-        /* width: 70px;
-        height: 70px; */
         border-radius: 50%;
         background-color: orange;
         transition: transform 0.3s ease-out, width 0.3s ease-out,
@@ -66,29 +55,24 @@ export const List = styled.ul`
       }
     }
     h2 {
-      font-family: "Barlow";
+      font-family: var(--font-barlow);
       font-style: normal;
       font-weight: 700;
       font-size: 12px;
       line-height: 16px;
-      /* identical to box height, or 133% */
-
       text-align: center;
       text-transform: uppercase;
-
-      /* Dark 1 */
-
-      color: #1c1c1e;
+      color: var(--colors-dark-1);
       margin-top: 16px;
     }
     &:hover figure:before {
       transform: translate(-50%, -50%) scale(2);
-      width: 90px;
-      height: 90px;
+      width: 50%;
+      height: 50%;
     }
 
     &:hover img {
-      animation: ${zoom} 0.5s forwards;
+      animation: ${zoom} 0.3s forwards;
     }
   }
 `;
