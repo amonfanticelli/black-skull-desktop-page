@@ -5,7 +5,7 @@ export const ButtonAndSpanContainer = styled.div`
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  bottom: 178px;
+  bottom: 21%;
   right: 40px;
   z-index: 999;
 
@@ -38,6 +38,7 @@ export const SpanContainer = styled.div`
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
+    text-align: center;
     color: var(--colors-black);
   }
   &:hover {

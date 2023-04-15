@@ -24,11 +24,6 @@ export const HeaderNavigation = () => {
     setIsSearching(true);
   };
 
-  const handleBlur = () => {
-    setIsSearching(false);
-    setSearchText("");
-  };
-
   const handleCancel = () => {
     setSearchText("");
     setIsSearching(false);
@@ -70,7 +65,6 @@ export const HeaderNavigation = () => {
             type="text"
             placeholder="Buscar"
             onFocus={handleFocus}
-            onBlur={handleBlur}
             isSearching={isSearching}
             value={searchText}
             onChange={handleInputChange}

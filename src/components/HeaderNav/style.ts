@@ -13,6 +13,7 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid var(--colors-dark-3);
 `;
 
 export const LogoAndNavContainer = styled.div`
@@ -136,4 +137,9 @@ export const IconsContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 21px;
+  img {
+    &:hover {
+      filter: brightness(160%);
+    }
+  }
 `;
