@@ -14,6 +14,9 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--colors-dark-3);
+  position: fixed;
+  z-index: 99999;
+  top: 32px;
 `;
 
 export const LogoAndNavContainer = styled.div`

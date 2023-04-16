@@ -5,6 +5,7 @@ import { ButtonBackToTop } from "../../components/ButtonBackToTop";
 import { MainContent } from "../../components/Main/style";
 import { CategoriesList } from "../../components/CategoriesList";
 import { ReleaseProductsList } from "../../components/ReleaseProductsList";
+import { AthletesList } from "../../components/AthletesList";
 export const Home = () => {
   return (
     <>
@@ -15,6 +16,7 @@ export const Home = () => {
       <MainContent>
         <CategoriesList />
         <ReleaseProductsList />
+        <AthletesList />
       </MainContent>
     </>
   );

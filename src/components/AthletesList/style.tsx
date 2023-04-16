@@ -1,17 +1,31 @@
 import styled from "styled-components";
-import athletesBackground from "../../assets/athletes/Group 699.png";
+import athletesBackground from "../../assets/athletes/Group-699.jpg";
 
 export const AthletesSection = styled.section`
   width: 100%;
-  background-image: url(${athletesBackground});
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-size: cover;
-  background-position: center;
-  mix-blend-mode: hard-light;
-  opacity: 0.25;
   height: 461px;
   position: relative;
+`;
+
+export const BackgroundImg = styled.div`
+  background-image: url(${athletesBackground});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 461px;
+`;
+
+export const AthletesContent = styled.div`
+  position: absolute;
+  width: 873px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 export const AthletesTitle = styled.h3`
@@ -22,6 +36,8 @@ export const AthletesTitle = styled.h3`
   line-height: 47px;
   text-transform: uppercase;
   color: var(--colors-white);
+  margin-bottom: 24px;
+
   span {
     font-family: var(--font-roboto-condensed);
     font-style: italic;
@@ -35,6 +51,7 @@ export const AthletesTitle = styled.h3`
 
 export const List = styled.ul`
   display: flex;
+  gap: 20px;
 
   li {
     width: 277px;
@@ -65,4 +82,11 @@ export const ButtonViewAll = styled.button`
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--colors-black);
+  border: none;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5%;
+  &:hover {
+    background-color: var(--colors-orange-2);
+  }
 `;

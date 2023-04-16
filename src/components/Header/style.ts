@@ -8,6 +8,8 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 0px 56px;
+  position: fixed;
+  z-index: 99999;
 `;
 
 export const ContactSpan = styled.span`
