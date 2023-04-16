@@ -35,12 +35,12 @@ import { useState } from "react";
 export const ProductsList = () => {
   const [showFlavor, setShowFlavor] = useState(false);
   const [showClothing, setShowClothing] = useState(false);
-  const [selectedButtonColor, setSelectedButtonColor] = useState("");
+  const [selectedButtonColor, setSelectedButtonColor] = useState("none");
   const [selectedButtons, setSelectedButtons] = useState<string[]>([]);
 
   const handleButtonClickColor = (buttonName: string) => {
     setSelectedButtonColor(
-      buttonName === selectedButtonColor ? "" : buttonName
+      buttonName === selectedButtonColor ? "none" : buttonName
     );
   };
   const handleButtonClick = (buttonName: string) => {
@@ -57,7 +57,7 @@ export const ProductsList = () => {
   return (
     <ListWrapper>
       <List>
-        <ButtonArrowLeft left="0" top="160px" />
+        <ButtonArrowLeft left="-14px" top="160px" />
         <li
           onMouseOver={() => setShowFlavor(true)}
           onMouseLeave={() => setShowFlavor(false)}
@@ -214,7 +214,6 @@ export const ProductsList = () => {
               <ColoredButtonContainer>
                 <ColoredButtonRed
                   active={selectedButtonColor === "red"}
-                  borderColor="black"
                   onClick={() => handleButtonClickColor("red")}
                 />
                 <ColoredButtonBlue
@@ -246,7 +245,7 @@ export const ProductsList = () => {
           </CardInfoContainer>
           <BuyButton>comprar</BuyButton>
         </li>
-        <ButtonArrowRight right="0" top="160px" />
+        <ButtonArrowRight right="-14px" top="160px" />
       </List>
       <ButtonsChangeImg margin="0 0 64px 0" />
     </ListWrapper>

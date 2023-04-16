@@ -17,12 +17,13 @@ export const BackgroundImg = styled.div`
 
 export const AthletesContent = styled.div`
   position: absolute;
-  width: 873px;
+  max-width: 873px;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -52,6 +53,7 @@ export const AthletesTitle = styled.h3`
 export const List = styled.ul`
   display: flex;
   gap: 20px;
+  width: 100%;
 
   li {
     width: 277px;

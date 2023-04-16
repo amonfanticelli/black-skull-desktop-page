@@ -6,6 +6,8 @@ import { MainContent } from "../../components/Main/style";
 import { CategoriesList } from "../../components/CategoriesList";
 import { ReleaseProductsList } from "../../components/ReleaseProductsList";
 import { AthletesList } from "../../components/AthletesList";
+import { DiscountProductsList } from "../../components/DiscountProductsList";
+import { ArticleList } from "../../components/ArticleList";
 export const Home = () => {
   return (
     <>
@@ -17,6 +19,8 @@ export const Home = () => {
         <CategoriesList />
         <ReleaseProductsList />
         <AthletesList />
+        <DiscountProductsList />
+        <ArticleList />
       </MainContent>
     </>
   );

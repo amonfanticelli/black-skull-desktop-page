@@ -7,7 +7,7 @@ export const CategoriesList = () => {
   return (
     <ListWrapper>
       <List>
-        <ButtonArrowLeft left="0" top="75px" />
+        <ButtonArrowLeft left="-14px" top="75px" />
         <li>
           <figure>
             <img src={categoriesImg} alt="suplemento alimentar" />
@@ -44,7 +44,7 @@ export const CategoriesList = () => {
           </figure>
           <h2>saúde</h2>
         </li>
-        <ButtonArrowRight right="0" top="75px" />
+        <ButtonArrowRight right="-14px" top="75px" />
       </List>
     </ListWrapper>
   );

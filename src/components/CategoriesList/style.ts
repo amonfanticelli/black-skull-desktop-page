@@ -22,7 +22,6 @@ export const List = styled.ul`
   display: flex;
   justify-content: center;
   gap: 20px;
-
   position: relative;
   width: 100%;
   max-width: 1210px;

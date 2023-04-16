@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 interface ButtonProps {
   active: boolean;
-  borderColor?: string;
 }
 
 export const ListWrapper = styled.div`
@@ -15,7 +14,6 @@ export const ListWrapper = styled.div`
 `;
 
 export const List = styled.ul`
-  position: relative;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -23,6 +21,7 @@ export const List = styled.ul`
   width: 100%;
   max-width: 1210px;
   margin-bottom: 73px;
+
   li {
     display: flex;
     flex-direction: column;
@@ -217,7 +216,6 @@ export const ClothingButtonsContainer = styled.div`
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  border: 1px solid red;
   justify-content: space-between;
   width: 75%;
   margin-bottom: 10px;
@@ -248,35 +246,41 @@ export const ColoredButtonContainer = styled.div`
   width: 75%;
   gap: 10px;
   justify-content: space-between;
-  border: 1px solid blue;
 `;
 
 export const ColoredButtonRed = styled.button<ButtonProps>`
   background-color: red;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   border-radius: 50px;
-  /* border: 1px solid
-    ${(props) =>
-    props.active ? "1px solid var(--colors-black)" : "transparent"}; */
+  outline: ${(props) => (props.active ? "1px solid black" : "1px solid white")};
   margin: 2px 2px 2px 2px;
-  border: 3px solid black;
+  border: 3px solid white;
 `;
 export const ColoredButtonBlue = styled.button<ButtonProps>`
   background-color: blue;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   border-radius: 50px;
+  outline: ${(props) => (props.active ? "1px solid black" : "1px solid white")};
+  margin: 2px 2px 2px 2px;
+  border: 3px solid white;
 `;
 export const ColoredButtonGreen = styled.button<ButtonProps>`
   background-color: green;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   border-radius: 50px;
+  outline: ${(props) => (props.active ? "1px solid black" : "1px solid white")};
+  margin: 2px 2px 2px 2px;
+  border: 3px solid white;
 `;
 export const ColoredButtonYellow = styled.button<ButtonProps>`
   background-color: yellow;
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   border-radius: 50px;
+  outline: ${(props) => (props.active ? "1px solid black" : "1px solid white")};
+  margin: 2px 2px 2px 2px;
+  border: 3px solid white;
 `;
