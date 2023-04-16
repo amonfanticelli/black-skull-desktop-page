@@ -9,11 +9,11 @@ export const ButtonLeftArrow = styled.button<IButtonArrowProps>`
   border: transparent;
   position: absolute;
   z-index: 999;
-  left: ${({ left }) => left || "0"};
-  right: ${({ right }) => right || "0"};
-  top: ${({ top }) => top || "0"};
-  bottom: ${({ bottom }) => bottom || "0"};
-  transform: ${({ transform }) => transform || "0"};
+  left: ${({ left }) => left || ""};
+  right: ${({ right }) => right || ""};
+  top: ${({ top }) => top || ""};
+  bottom: ${({ bottom }) => bottom || ""};
+  transform: ${({ transform }) => transform || ""};
   &:hover {
     background: var(--colors-orange-2);
   }

@@ -1,3 +1,4 @@
+import { ButtonsChangeImg } from "../ButtonsChangeImg";
 import {
   BannerContainer,
   BackgroundImg,
@@ -6,9 +7,6 @@ import {
   ColoredSpanTitle,
   BannerParagraph,
   BannerButton,
-  BannerButtonsContainer,
-  ButtonOrange,
-  ButtonGrey,
 } from "./style";
 
 export const Banner = () => {
@@ -26,11 +24,14 @@ export const Banner = () => {
         </BannerParagraph>
         <BannerButton>Confira</BannerButton>
       </BannerContent>
-      <BannerButtonsContainer>
-        <ButtonOrange></ButtonOrange>
-        <ButtonGrey></ButtonGrey>
-        <ButtonGrey></ButtonGrey>
-      </BannerButtonsContainer>
+
+      <ButtonsChangeImg
+        position="absolute"
+        bottom="0"
+        left="50%"
+        transform="translate(-50%, -50%)"
+        margin="0 0 32px 0"
+      />
     </BannerContainer>
   );
 };

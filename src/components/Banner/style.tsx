@@ -79,31 +79,3 @@ export const BannerButton = styled.button`
     background-color: var(--colors-orange-2);
   }
 `;
-
-export const BannerButtonsContainer = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  gap: 10px;
-  height: 10px;
-  margin-bottom: 32px;
-`;
-
-export const ButtonOrange = styled.button`
-  background-color: var(--colors-orange-1);
-  width: 40px;
-  height: 6px;
-  border: none;
-  transform: rotate(180deg);
-  transform-origin: top;
-  position: relative; /* add this line to enable positioning */
-  top: 2px; /* adjust the top value to position the button */
-`;
-export const ButtonGrey = styled.button`
-  background-color: var(--colors-grey-2);
-  width: 40px;
-  height: 2px;
-  border: none;
-`;
