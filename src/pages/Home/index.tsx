@@ -7,7 +7,9 @@ import { CategoriesList } from "../../components/CategoriesList";
 import { ReleaseProductsList } from "../../components/ReleaseProductsList";
 import { AthletesList } from "../../components/AthletesList";
 import { DiscountProductsList } from "../../components/DiscountProductsList";
-import { ArticleList } from "../../components/ArticleList";
+import { ArticleList } from "../../components/ArticlesList";
+import { ObjectivesList } from "../../components/ObjectivesList";
+
 export const Home = () => {
   return (
     <>
@@ -21,6 +23,7 @@ export const Home = () => {
         <AthletesList />
         <DiscountProductsList />
         <ArticleList />
+        <ObjectivesList />
       </MainContent>
     </>
   );
