@@ -8,7 +8,7 @@ export const ButtonLeftArrow = styled.button<IButtonArrowProps>`
   border-radius: 4px;
   border: transparent;
   position: absolute;
-  z-index: 999;
+  z-index: 99;
   left: ${({ left }) => left || ""};
   right: ${({ right }) => right || ""};
   top: ${({ top }) => top || ""};

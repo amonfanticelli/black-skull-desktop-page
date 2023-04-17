@@ -11,6 +11,7 @@ import { ArticleList } from "../../components/ArticlesList";
 import { ObjectivesList } from "../../components/ObjectivesList";
 import { BenefitsSection } from "../../components/BenefitsSection";
 import { AboutSecion } from "../../components/AboutSection";
+import { Footer } from "../../components/Footer";
 
 export const Home = () => {
   return (
@@ -29,6 +30,7 @@ export const Home = () => {
       </MainContent>
       <BenefitsSection />
       <AboutSecion />
+      <Footer />
     </>
   );
 };
