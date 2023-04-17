@@ -10,6 +10,7 @@ import { DiscountProductsList } from "../../components/DiscountProductsList";
 import { ArticleList } from "../../components/ArticlesList";
 import { ObjectivesList } from "../../components/ObjectivesList";
 import { BenefitsSection } from "../../components/BenefitsSection";
+import { AboutSecion } from "../../components/AboutSection";
 
 export const Home = () => {
   return (
@@ -27,6 +28,7 @@ export const Home = () => {
         <ObjectivesList />
       </MainContent>
       <BenefitsSection />
+      <AboutSecion />
     </>
   );
 };

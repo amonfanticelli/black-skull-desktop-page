@@ -1,8 +1,5 @@
 import styled from "styled-components";
-
-interface ButtonProps {
-  active: boolean;
-}
+import { IButtonProps } from "../../interfaces";
 
 export const ListWrapper = styled.div`
   width: 100%;
@@ -172,7 +169,7 @@ export const FlavorButtonsContainer = styled.div`
   width: 90%;
 `;
 
-export const FlavorButtons = styled.button<ButtonProps>`
+export const FlavorButtons = styled.button<IButtonProps>`
   background-color: ${(props) =>
     props.active ? "var(--colors-black)" : "var(--colors-white)"};
   color: ${(props) =>
@@ -220,7 +217,7 @@ export const ClothingButtonsContainer = styled.div`
   width: 75%;
   margin-bottom: 10px;
 `;
-export const ClothingButton = styled.button<ButtonProps>`
+export const ClothingButton = styled.button<IButtonProps>`
   background-color: ${(props) =>
     props.active ? "var(--colors-black)" : "var(--colors-white)"};
   color: ${(props) =>
@@ -248,7 +245,7 @@ export const ColoredButtonContainer = styled.div`
   justify-content: space-between;
 `;
 
-export const ColoredButtonRed = styled.button<ButtonProps>`
+export const ColoredButtonRed = styled.button<IButtonProps>`
   background-color: red;
   width: 30px;
   height: 30px;
@@ -257,7 +254,7 @@ export const ColoredButtonRed = styled.button<ButtonProps>`
   margin: 2px 2px 2px 2px;
   border: 3px solid white;
 `;
-export const ColoredButtonBlue = styled.button<ButtonProps>`
+export const ColoredButtonBlue = styled.button<IButtonProps>`
   background-color: blue;
   width: 30px;
   height: 30px;
@@ -266,7 +263,7 @@ export const ColoredButtonBlue = styled.button<ButtonProps>`
   margin: 2px 2px 2px 2px;
   border: 3px solid white;
 `;
-export const ColoredButtonGreen = styled.button<ButtonProps>`
+export const ColoredButtonGreen = styled.button<IButtonProps>`
   background-color: green;
   width: 30px;
   height: 30px;
@@ -275,7 +272,7 @@ export const ColoredButtonGreen = styled.button<ButtonProps>`
   margin: 2px 2px 2px 2px;
   border: 3px solid white;
 `;
-export const ColoredButtonYellow = styled.button<ButtonProps>`
+export const ColoredButtonYellow = styled.button<IButtonProps>`
   background-color: yellow;
   width: 30px;
   height: 30px;

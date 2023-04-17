@@ -1,9 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import magnifyingGlass from "../../assets/headerFiles/MagnifyingGlass.png";
-
-interface InputProps {
-  isSearching: boolean;
-}
+import { InputProps } from "../../interfaces";
 
 export const Header = styled.header`
   width: 100%;

@@ -15,3 +15,11 @@ export interface IButtonsChangeImgProps {
   margin?: string;
   position?: string;
 }
+
+export interface IButtonProps {
+  active: boolean;
+}
+
+export interface InputProps {
+  isSearching: boolean;
+}
