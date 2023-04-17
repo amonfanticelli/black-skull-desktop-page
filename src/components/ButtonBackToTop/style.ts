@@ -5,7 +5,7 @@ export const ButtonAndSpanContainer = styled.div`
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-  bottom: 21%;
+  bottom: 274px;
   right: 40px;
   z-index: 999;
 

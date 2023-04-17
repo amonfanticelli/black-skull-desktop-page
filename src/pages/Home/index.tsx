@@ -9,6 +9,7 @@ import { AthletesList } from "../../components/AthletesList";
 import { DiscountProductsList } from "../../components/DiscountProductsList";
 import { ArticleList } from "../../components/ArticlesList";
 import { ObjectivesList } from "../../components/ObjectivesList";
+import { BenefitsSection } from "../../components/BenefitsSection";
 
 export const Home = () => {
   return (
@@ -25,6 +26,7 @@ export const Home = () => {
         <ArticleList />
         <ObjectivesList />
       </MainContent>
+      <BenefitsSection />
     </>
   );
 };

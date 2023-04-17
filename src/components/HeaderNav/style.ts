@@ -41,7 +41,7 @@ const borderGrow = keyframes`
 
 export const NavigationLinks = styled.nav`
   height: 72px;
-  border: 1px solid red;
+
   @media screen and (max-width: 1279px) {
   }
   ul {
@@ -106,7 +106,7 @@ export const SearchInput = styled.input<InputProps>`
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-color: var(--colors-dark-2);
-  border: 1px solid #3a3a3c;
+  border: 1px solid var(--colors-dark-3);
   border-radius: 4px;
   padding-left: 16px;
   font-family: var(--font-barlow);

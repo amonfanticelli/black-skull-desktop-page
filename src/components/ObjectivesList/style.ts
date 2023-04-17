@@ -1,4 +1,17 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const zoom = keyframes`  
+  0% {
+      transform: scale(1);
+    }
+
+   
+    100% {
+      transform: scale(1.1);
+    }
+   
+  
+`;
 
 export const ObjectivesSection = styled.section`
   display: flex;
@@ -10,19 +23,16 @@ export const ObjectivesSection = styled.section`
   padding: 0px 56px;
   h3 {
     margin-top: 64px;
-    font-family: "Roboto Condensed";
+    font-family: var(--font-roboto-condensed);
     font-style: italic;
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
-    /* identical to box height */
 
     text-align: center;
     text-transform: uppercase;
 
-    /* Dark 1 */
-
-    color: #1c1c1e;
+    color: var(--colors-dark-1);
     margin-bottom: 24px;
   }
   ul {
@@ -30,7 +40,19 @@ export const ObjectivesSection = styled.section`
     gap: 20px;
 
     li {
+      filter: grayscale(100%);
+      transform-origin: center center;
+      overflow: hidden;
+
+      &:hover {
+        filter: grayscale(0%);
+      }
+      &:hover img {
+        animation: ${zoom} 0.2s ease-in forwards;
+      }
+
       img {
+        object-fit: cover;
       }
     }
   }
