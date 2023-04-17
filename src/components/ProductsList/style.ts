@@ -192,6 +192,10 @@ export const FlavorButtons = styled.button<IButtonProps>`
   cursor: pointer;
   text-transform: uppercase;
   padding: 6px;
+  &:hover {
+    color: var(--colors-dark-1);
+    border: 1px solid var(--colors-dark-1);
+  }
 `;
 
 export const ClothingContainer = styled.div`
@@ -241,6 +245,10 @@ export const ClothingButton = styled.button<IButtonProps>`
   cursor: pointer;
   text-transform: uppercase;
   padding: 6px;
+  &:hover {
+    color: var(--colors-dark-1);
+    border: 1px solid var(--colors-dark-1);
+  }
 `;
 
 export const ColoredButtonContainer = styled.div`
@@ -255,34 +263,46 @@ export const ColoredButtonRed = styled.button<IButtonProps>`
   width: 30px;
   height: 30px;
   border-radius: 50px;
-  outline: ${(props) => (props.active ? "1px solid black" : "1px solid white")};
+  outline: ${(props) =>
+    props.active
+      ? "1px solid var(--colors-black)"
+      : "1px solid var(--colors-white)"};
   margin: 2px 2px 2px 2px;
-  border: 3px solid white;
+  border: 3px solid var(--colors-white);
 `;
 export const ColoredButtonBlue = styled.button<IButtonProps>`
   background-color: blue;
   width: 30px;
   height: 30px;
   border-radius: 50px;
-  outline: ${(props) => (props.active ? "1px solid black" : "1px solid white")};
+  outline: ${(props) =>
+    props.active
+      ? "1px solid var(--colors-black)"
+      : "1px solid var(--colors-white)"};
   margin: 2px 2px 2px 2px;
-  border: 3px solid white;
+  border: 3px solid var(--colors-white);
 `;
 export const ColoredButtonGreen = styled.button<IButtonProps>`
   background-color: green;
   width: 30px;
   height: 30px;
   border-radius: 50px;
-  outline: ${(props) => (props.active ? "1px solid black" : "1px solid white")};
+  outline: ${(props) =>
+    props.active
+      ? "1px solid var(--colors-black)"
+      : "1px solid var(--colors-white)"};
   margin: 2px 2px 2px 2px;
-  border: 3px solid white;
+  border: 3px solid var(--colors-white);
 `;
 export const ColoredButtonYellow = styled.button<IButtonProps>`
   background-color: yellow;
   width: 30px;
   height: 30px;
   border-radius: 50px;
-  outline: ${(props) => (props.active ? "1px solid black" : "1px solid white")};
+  outline: ${(props) =>
+    props.active
+      ? "1px solid var(--colors-black)"
+      : "1px solid var(--colors-white)"};
   margin: 2px 2px 2px 2px;
-  border: 3px solid white;
+  border: 3px solid var(--colors-white);
 `;

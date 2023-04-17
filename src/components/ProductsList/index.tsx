@@ -252,59 +252,58 @@ export const ProductsList = () => {
               <ClothingTitle>Tamanho</ClothingTitle>
               <ClothingButtonsContainer>
                 <ClothingButton
-                  active={selectedButtons.includes("size1")}
-                  // active={selectedButton === "sabor1"}
-                  onClick={() => handleButtonClick("size1")}
+                  active={selectedButtons.includes("size7")}
+                  onClick={() => handleButtonClick("size7")}
                 >
                   p
                 </ClothingButton>
                 <ClothingButton
-                  active={selectedButtons.includes("size2")}
-                  onClick={() => handleButtonClick("size2")}
+                  active={selectedButtons.includes("size8")}
+                  onClick={() => handleButtonClick("size8")}
                 >
                   m
                 </ClothingButton>
                 <ClothingButton
-                  active={selectedButtons.includes("size3")}
-                  onClick={() => handleButtonClick("size3")}
+                  active={selectedButtons.includes("size9")}
+                  onClick={() => handleButtonClick("size9")}
                 >
                   g
                 </ClothingButton>
                 <ClothingButton
-                  active={selectedButtons.includes("size4")}
-                  onClick={() => handleButtonClick("size4")}
+                  active={selectedButtons.includes("size10")}
+                  onClick={() => handleButtonClick("size10")}
                 >
                   gg
                 </ClothingButton>
                 <ClothingButton
-                  active={selectedButtons.includes("size5")}
-                  onClick={() => handleButtonClick("size5")}
+                  active={selectedButtons.includes("size11")}
+                  onClick={() => handleButtonClick("size11")}
                 >
                   exgg2
                 </ClothingButton>
                 <ClothingButton
-                  active={selectedButtons.includes("size6")}
-                  onClick={() => handleButtonClick("size6")}
+                  active={selectedButtons.includes("size12")}
+                  onClick={() => handleButtonClick("size12")}
                 >
                   exgg2
                 </ClothingButton>
               </ClothingButtonsContainer>
               <ColoredButtonContainer>
                 <ColoredButtonRed
-                  active={selectedButtonColor === "red"}
-                  onClick={() => handleButtonClickColor("red")}
+                  active={selectedButtonColor === "red2"}
+                  onClick={() => handleButtonClickColor("red2")}
                 />
                 <ColoredButtonBlue
-                  active={selectedButtonColor === "blue"}
-                  onClick={() => handleButtonClickColor("blue")}
+                  active={selectedButtonColor === "blue2"}
+                  onClick={() => handleButtonClickColor("blue2")}
                 />
                 <ColoredButtonGreen
-                  active={selectedButtonColor === "green"}
-                  onClick={() => handleButtonClickColor("green")}
+                  active={selectedButtonColor === "green2"}
+                  onClick={() => handleButtonClickColor("green2")}
                 />
                 <ColoredButtonYellow
-                  active={selectedButtonColor === "yellow"}
-                  onClick={() => handleButtonClickColor("yellow")}
+                  active={selectedButtonColor === "yellow2"}
+                  onClick={() => handleButtonClickColor("yellow2")}
                 />
               </ColoredButtonContainer>
             </ClothingContainer>

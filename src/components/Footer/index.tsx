@@ -23,7 +23,7 @@ export const Footer = () => {
       <FooterBlackSkull id="subscribe">
         <FollowUsImg
           src={followUs}
-          alt="Logo da black skull com os icones de todas suas redes sociais disponíveis"
+          alt="Logo da black skull com os ícones de todas suas redes sociais disponíveis"
         />
         <PolicyContainer>
           <PolicyInfo>
@@ -54,8 +54,11 @@ export const Footer = () => {
           </PolicyInfo>
 
           <PaymentAndSecurityContainer>
-            <img src={payment} alt="" />
-            <img src={security} alt="" />
+            <img src={payment} alt="ícones de cartões e formas de pagamentos" />
+            <img
+              src={security}
+              alt="ícones de empresa com certificados de segurança"
+            />
           </PaymentAndSecurityContainer>
         </PolicyContainer>
         <SubscribeContainer>

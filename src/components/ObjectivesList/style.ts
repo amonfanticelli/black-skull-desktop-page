@@ -13,6 +13,28 @@ const zoom = keyframes`
   
 `;
 
+export const AthleteImg = styled.img`
+  filter: grayscale(100%);
+  max-height: 100%;
+`;
+
+export const OrangeRectangle = styled.img`
+  position: absolute;
+  bottom: 0;
+`;
+export const RectangularTraceLarge = styled.img`
+  position: absolute;
+  bottom: 0;
+  left: 170px;
+  transition: margin-left 0.2s ease-in-out;
+`;
+export const RectangularTraceSmall = styled.img`
+  position: absolute;
+  bottom: 0;
+  left: 160px;
+  transition: margin-left 0.2s ease-in-out;
+`;
+
 export const ObjectivesSection = styled.section`
   display: flex;
   flex-direction: column;
@@ -40,19 +62,45 @@ export const ObjectivesSection = styled.section`
     gap: 20px;
 
     li {
-      filter: grayscale(100%);
+      display: flex;
+      flex-direction: column;
+
       transform-origin: center center;
       overflow: hidden;
+      position: relative;
+
+      &:hover ${RectangularTraceLarge} {
+        margin-left: 30px;
+        filter: brightness(115%);
+      }
+      &:hover ${RectangularTraceSmall} {
+        filter: brightness(115%);
+        margin-left: 60px;
+      }
 
       &:hover {
         filter: grayscale(0%);
       }
-      &:hover img {
+      &:hover ${OrangeRectangle} {
+        filter: brightness(115%);
+      }
+      &:hover ${AthleteImg} {
         animation: ${zoom} 0.2s ease-in forwards;
       }
 
-      img {
-        object-fit: cover;
+      span {
+        position: absolute;
+        z-index: 1;
+        left: 16px;
+        bottom: 12px;
+        font-family: var(--font-barlow);
+        font-style: italic;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+
+        color: var(--colors-black);
       }
     }
   }

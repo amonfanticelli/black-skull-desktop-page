@@ -97,7 +97,6 @@ export const ArticleImg = styled.img`
 
 export const SquareIcon = styled.img`
   position: absolute;
-
   bottom: 12px;
   left: 113px;
   transition: margin-left 0.2s ease-in-out;
