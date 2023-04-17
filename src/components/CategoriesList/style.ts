@@ -45,7 +45,8 @@ export const List = styled.ul`
         left: 50%;
         transform: translate(-50%, -50%) scale(0);
         border-radius: 50%;
-        background-color: orange;
+        background-color: var(--colors-orange-1);
+        border: 2px solid var(--colors-orange-2);
         transition: transform 0.3s ease-out, width 0.3s ease-out,
           height 0.3s ease-out;
       }

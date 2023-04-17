@@ -1,23 +1,5 @@
 import styled, { keyframes } from "styled-components";
 
-const rotateCash = keyframes`
-  from {
-    transform: rotate(0deg) translateY(0);
-  }
-  to {
-    transform: rotate(-160deg) translateY(-10px);
-  }
-`;
-
-const rotateCashBack = keyframes`
-  from {
-    transform: rotate(-160deg) translateY(-10px);
-  }
-  to {
-    transform: rotate(0deg) translateY(0);
-  }
-`;
-
 export const BenefitSection = styled.section`
   display: flex;
   gap: 20px;

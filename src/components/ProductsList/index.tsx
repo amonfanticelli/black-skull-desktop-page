@@ -72,7 +72,7 @@ export const ProductsList = () => {
             <PriceSpan>R$ 349,90</PriceSpan>
             <InstallmentPriceSpan>ou 12x de R$ 29,16</InstallmentPriceSpan>
           </CardInfoContainer>
-          <BuyButton>comprar</BuyButton>
+          <BuyButton className="visible">comprar</BuyButton>
           {showFlavor && (
             <FlavorContainer className="flavor-container">
               <FlavorTitle>Sabor</FlavorTitle>
@@ -232,7 +232,10 @@ export const ProductsList = () => {
             </ClothingContainer>
           )}
         </li>
-        <li>
+        <li
+          onMouseOver={() => setShowClothing(true)}
+          onMouseLeave={() => setShowClothing(false)}
+        >
           <ProductImg src={suplementImg} alt="suplemento alimentar" />
           <IconsContainer>
             <StarIcon src={starImg} alt="ícone de uma estrela" />
@@ -244,7 +247,70 @@ export const ProductsList = () => {
             <InstallmentPriceSpan>ou 12x de R$ 29,16</InstallmentPriceSpan>
           </CardInfoContainer>
           <BuyButton>comprar</BuyButton>
+          {showClothing && (
+            <ClothingContainer className="clothing-container">
+              <ClothingTitle>Tamanho</ClothingTitle>
+              <ClothingButtonsContainer>
+                <ClothingButton
+                  active={selectedButtons.includes("size1")}
+                  // active={selectedButton === "sabor1"}
+                  onClick={() => handleButtonClick("size1")}
+                >
+                  p
+                </ClothingButton>
+                <ClothingButton
+                  active={selectedButtons.includes("size2")}
+                  onClick={() => handleButtonClick("size2")}
+                >
+                  m
+                </ClothingButton>
+                <ClothingButton
+                  active={selectedButtons.includes("size3")}
+                  onClick={() => handleButtonClick("size3")}
+                >
+                  g
+                </ClothingButton>
+                <ClothingButton
+                  active={selectedButtons.includes("size4")}
+                  onClick={() => handleButtonClick("size4")}
+                >
+                  gg
+                </ClothingButton>
+                <ClothingButton
+                  active={selectedButtons.includes("size5")}
+                  onClick={() => handleButtonClick("size5")}
+                >
+                  exgg2
+                </ClothingButton>
+                <ClothingButton
+                  active={selectedButtons.includes("size6")}
+                  onClick={() => handleButtonClick("size6")}
+                >
+                  exgg2
+                </ClothingButton>
+              </ClothingButtonsContainer>
+              <ColoredButtonContainer>
+                <ColoredButtonRed
+                  active={selectedButtonColor === "red"}
+                  onClick={() => handleButtonClickColor("red")}
+                />
+                <ColoredButtonBlue
+                  active={selectedButtonColor === "blue"}
+                  onClick={() => handleButtonClickColor("blue")}
+                />
+                <ColoredButtonGreen
+                  active={selectedButtonColor === "green"}
+                  onClick={() => handleButtonClickColor("green")}
+                />
+                <ColoredButtonYellow
+                  active={selectedButtonColor === "yellow"}
+                  onClick={() => handleButtonClickColor("yellow")}
+                />
+              </ColoredButtonContainer>
+            </ClothingContainer>
+          )}
         </li>
+
         <ButtonArrowRight right="-14px" top="160px" />
       </List>
       <ButtonsChangeImg margin="0 0 64px 0" />

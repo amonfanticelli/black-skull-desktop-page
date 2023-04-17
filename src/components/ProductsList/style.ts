@@ -28,9 +28,9 @@ export const List = styled.ul`
     border-radius: 4px;
     position: relative;
 
-    button {
-    }
     &:hover {
+      background-color: var(--colors-background);
+      transition: 0.3s;
       .flavor-container {
         display: flex;
         flex-direction: column;
@@ -121,6 +121,9 @@ export const InstallmentPriceSpan = styled.span`
 `;
 
 export const BuyButton = styled.button`
+  position: absolute;
+  width: 100%;
+  bottom: -49px;
   background-color: var(--colors-orange-1);
   color: var(--colors-black);
   border-radius: 4px;
@@ -134,7 +137,7 @@ export const BuyButton = styled.button`
   line-height: 20px;
   padding: 14px;
   visibility: hidden; // Hide the button by default
-  transition: visibility 0.2s ease-in; // Add a transition effect
+  transition: visibility 0.3s ease-in; // Add a transition effect
   &:hover {
     background-color: var(--colors-orange-2);
   }
@@ -173,7 +176,7 @@ export const FlavorButtons = styled.button<IButtonProps>`
   background-color: ${(props) =>
     props.active ? "var(--colors-black)" : "var(--colors-white)"};
   color: ${(props) =>
-    props.active ? "var(--colors-white)" : "var(--colors-grey-2)"};
+    props.active ? "var(--colors-white)" : "var(--colors-grey-1)"};
   border: ${(props) =>
     props.active
       ? "1px solid var(--colors-black)"
@@ -182,9 +185,10 @@ export const FlavorButtons = styled.button<IButtonProps>`
   width: 85px;
   font-family: var(--font-barlow);
   font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 17px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
   cursor: pointer;
   text-transform: uppercase;
   padding: 6px;
@@ -221,7 +225,7 @@ export const ClothingButton = styled.button<IButtonProps>`
   background-color: ${(props) =>
     props.active ? "var(--colors-black)" : "var(--colors-white)"};
   color: ${(props) =>
-    props.active ? "var(--colors-white)" : "var(--colors-grey-2)"};
+    props.active ? "var(--colors-white)" : "var(--colors-grey-1)"};
   border: ${(props) =>
     props.active
       ? "1px solid var(--colors-black)"
@@ -230,9 +234,10 @@ export const ClothingButton = styled.button<IButtonProps>`
   width: 50px;
   font-family: var(--font-barlow);
   font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 17px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
   cursor: pointer;
   text-transform: uppercase;
   padding: 6px;

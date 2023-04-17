@@ -1,4 +1,17 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const zoom = keyframes`  
+  0% {
+      transform: scale(1);
+    }
+
+   
+    100% {
+      transform: scale(1.1);
+    }
+   
+  
+`;
 
 export const ArticleSection = styled.section`
   width: 100%;
@@ -75,6 +88,19 @@ export const ArticleInfoContainer = styled.div`
   padding-left: 24px;
   padding-right: 24px;
   margin-bottom: 24px;
+  position: relative;
+`;
+export const ArticleImg = styled.img`
+  width: 100%;
+  margin-bottom: 15px;
+`;
+
+export const SquareIcon = styled.img`
+  position: absolute;
+
+  bottom: 12px;
+  left: 113px;
+  transition: margin-left 0.2s ease-in-out;
 `;
 
 export const List = styled.ul`
@@ -89,10 +115,18 @@ export const List = styled.ul`
     background: var(--colors-dark-1);
     border: 1px solid var(--colors-dark-3);
     width: 376px;
-    img {
-      width: 100%;
-      margin-bottom: 15px;
+    overflow: hidden;
+    &:hover ${ArticleImg} {
+      animation: ${zoom} 0.2s ease-in forwards;
     }
+
+    &:hover ${SquareIcon} {
+      margin-left: 40px;
+    }
+    &:hover {
+      background: var(--colors-dark-3);
+    }
+
     p {
       font-family: var(--font-barlow);
       font-style: normal;
