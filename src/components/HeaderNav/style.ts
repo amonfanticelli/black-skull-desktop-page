@@ -9,16 +9,25 @@ export const Header = styled.header`
   padding: 0 56px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
   border-bottom: 1px solid var(--colors-dark-3);
   position: fixed;
   z-index: 99999;
   top: 32px;
+  @media screen and (max-width: 1279px) {
+    height: 90px;
+  }
 `;
 
 export const LogoAndNavContainer = styled.div`
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  @media screen and (max-width: 1279px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const LogoBlackSkullImg = styled.img`
@@ -38,10 +47,14 @@ const borderGrow = keyframes`
 
 export const NavigationLinks = styled.nav`
   height: 72px;
-
   @media screen and (max-width: 1279px) {
+    max-height: 36px;
   }
+
   ul {
+    @media screen and (max-width: 1279px) {
+    }
+
     display: flex;
 
     li {
@@ -51,6 +64,9 @@ export const NavigationLinks = styled.nav`
       align-items: center;
       justify-content: center;
       position: relative;
+      @media screen and (max-width: 1279px) {
+        max-height: 36px;
+      }
 
       a {
         font-family: var(--font-barlow);
@@ -87,12 +103,21 @@ export const SearchAndIconsContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   max-width: 350px;
+  @media screen and (max-width: 1279px) {
+    max-height: 36px;
+    padding-left: 13px;
+    max-width: 700px;
+    width: 620px;
+  }
 `;
 
 export const SearchContainer = styled.div`
   position: relative;
   width: 216px;
   height: 40px;
+  @media screen and (max-width: 1279px) {
+    max-height: 36px;
+  }
 `;
 
 export const SearchInput = styled.input<InputProps>`
@@ -131,7 +156,7 @@ export const CancelButton = styled.button`
   color: var(--colors-white);
   cursor: pointer;
   svg {
-    font-size: 2rem;
+    font-size: 20px;
   }
 `;
 

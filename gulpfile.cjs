@@ -3,7 +3,6 @@ const babel = require("gulp-babel");
 const fs = require("fs");
 
 function jsTask() {
-  // create the dist directory if it doesn't exist
   if (!fs.existsSync("dist")) {
     fs.mkdirSync("dist");
   }

@@ -34,54 +34,54 @@ export const HeaderNavigation = () => {
   };
   return (
     <Header>
+      <LogoBlackSkullImg src={blackSkullLogo} alt="Black Skull Logo" />
       <LogoAndNavContainer>
-        <LogoBlackSkullImg src={blackSkullLogo} alt="Black Skull Logo" />
         <NavigationLinks>
           <ul>
             <li>
-              <a href="#">categorias</a>
+              <a href="#categories">categorias</a>
             </li>
             <li>
-              <a href="#">vestuário</a>
+              <a href="#clothing">vestuário</a>
             </li>
             <li>
-              <a href="#">objetivos</a>
+              <a href="#objectives">objetivos</a>
             </li>
             <li>
-              <a href="#">promoções</a>
+              <a href="#promotions">promoções</a>
             </li>
             <li>
-              <a href="#">atletas</a>
+              <a href="#athletes">atletas</a>
             </li>
             <li>
-              <a href="#">assinaturas</a>
+              <a href="#subscribe">assinaturas</a>
             </li>
           </ul>
         </NavigationLinks>
+        <SearchAndIconsContainer>
+          <SearchContainer>
+            <SearchInput
+              type="text"
+              placeholder="Buscar"
+              onFocus={handleFocus}
+              isSearching={isSearching}
+              value={searchText}
+              onChange={handleInputChange}
+              className={isSearching ? "is-searching" : ""}
+            />
+            {isSearching && (
+              <CancelButton onClick={handleCancel}>
+                <RiCloseLine />{" "}
+              </CancelButton>
+            )}
+          </SearchContainer>
+          <IconsContainer>
+            <img src={user} alt="ícone de usuário" />
+            <img src={star} alt="ícone de uma estrela" />
+            <img src={cart} alt="ícone de um carrinho" />
+          </IconsContainer>
+        </SearchAndIconsContainer>
       </LogoAndNavContainer>
-      <SearchAndIconsContainer>
-        <SearchContainer>
-          <SearchInput
-            type="text"
-            placeholder="Buscar"
-            onFocus={handleFocus}
-            isSearching={isSearching}
-            value={searchText}
-            onChange={handleInputChange}
-            className={isSearching ? "is-searching" : ""}
-          />
-          {isSearching && (
-            <CancelButton onClick={handleCancel}>
-              <RiCloseLine />{" "}
-            </CancelButton>
-          )}
-        </SearchContainer>
-        <IconsContainer>
-          <img src={user} alt="ícone de usuário" />
-          <img src={star} alt="ícone de uma estrela" />
-          <img src={cart} alt="ícone de um carrinho" />
-        </IconsContainer>
-      </SearchAndIconsContainer>
     </Header>
   );
 };

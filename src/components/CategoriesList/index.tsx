@@ -5,7 +5,7 @@ import categoriesImg from "../../assets/cardFiles/image 2.png";
 
 export const CategoriesList = () => {
   return (
-    <ListWrapper>
+    <ListWrapper id="categories">
       <List>
         <ButtonArrowLeft left="-14px" top="75px" />
         <li>

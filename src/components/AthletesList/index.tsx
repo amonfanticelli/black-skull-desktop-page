@@ -14,7 +14,7 @@ import athlete3 from "../../assets/athletes/Rectangle 40.jpg";
 
 export const AthletesList = () => {
   return (
-    <AthletesSection>
+    <AthletesSection id="athletes">
       <BackgroundImg />
 
       <AthletesContent>

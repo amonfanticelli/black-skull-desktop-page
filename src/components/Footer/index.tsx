@@ -20,7 +20,7 @@ import security from "../../assets/footerFiles/Group-165.png";
 export const Footer = () => {
   return (
     <>
-      <FooterBlackSkull>
+      <FooterBlackSkull id="subscribe">
         <FollowUsImg
           src={followUs}
           alt="Logo da black skull com os icones de todas suas redes sociais disponíveis"

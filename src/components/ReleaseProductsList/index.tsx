@@ -4,7 +4,7 @@ import { ReleaseTitle } from "./style";
 export const ReleaseProductsList = () => {
   return (
     <>
-      <ReleaseTitle>lançamentos</ReleaseTitle>
+      <ReleaseTitle id="clothing">lançamentos</ReleaseTitle>
       <ProductsList />
     </>
   );

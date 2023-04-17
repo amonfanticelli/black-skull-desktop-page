@@ -6,7 +6,7 @@ import objective4 from "../../assets/objectiveFiles/Objetivo-4.png";
 
 export const ObjectivesList = () => {
   return (
-    <ObjectivesSection>
+    <ObjectivesSection id="objectives">
       <h3>objetivos</h3>
       <ul>
         <li>

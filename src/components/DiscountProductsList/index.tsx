@@ -4,7 +4,7 @@ import { DiscountTitle } from "./style";
 export const DiscountProductsList = () => {
   return (
     <>
-      <DiscountTitle>Promoções</DiscountTitle>
+      <DiscountTitle id="promotions">Promoções</DiscountTitle>
       <ProductsList />
     </>
   );
