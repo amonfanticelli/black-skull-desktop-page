@@ -1,25 +1,5 @@
 import styled, { keyframes } from "styled-components";
 
-const rotateBox = keyframes`
-  from {
-    transform: rotate(0deg) translateY(0);
-  }
-  to {
-    transform: rotate(70deg) translateY(-40px);
-    
-  }
-`;
-
-const rotateBoxBack = keyframes`
-  from {
-    transform: rotate(70deg) translateY(-40px);
-  }
-  to {
-    transform: rotate(0deg) translateY(0);
-    
-  }
-`;
-
 const rotateCash = keyframes`
   from {
     transform: rotate(0deg) translateY(0);
@@ -64,10 +44,14 @@ export const MoneyBackContainer = styled.div`
     height: 135px;
     margin-left: 30.5px;
     align-self: flex-end;
-    animation: ${rotateBoxBack} 0.2s linear forwards;
+    margin-bottom: 20px;
+    transform: rotate(0deg) translateY(0);
+    transition: transform 0.3s, margin-bottom 0.3s;
   }
   &:hover img {
-    animation: ${rotateBox} 0.2s linear forwards;
+    transform: rotate(70deg) translateY(0);
+    transition: transform 0.3s margin-bottom ease;
+    margin-bottom: 50px;
   }
 `;
 export const FreeShippingContainer = styled.div`
@@ -87,10 +71,13 @@ export const FreeShippingContainer = styled.div`
     height: 135px;
     margin-left: 30.5px;
     align-self: flex-end;
-    animation: ${rotateCashBack} 0.2s linear forwards;
+    transform: rotate(0deg) translateY(-10px);
+    transition: transform 0.2s, margin-bottom 0.2s;
   }
   &:hover img {
-    animation: ${rotateCash} 0.2s linear forwards;
+    transform: rotate(-160deg) translateY(0);
+    transition: transform 0.3s margin-bottom ease;
+    margin-bottom: 50px;
   }
 `;
 
