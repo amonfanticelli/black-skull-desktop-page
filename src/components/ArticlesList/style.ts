@@ -93,6 +93,9 @@ export const ArticleInfoContainer = styled.div`
 export const ArticleImg = styled.img`
   width: 100%;
   margin-bottom: 15px;
+  height: 200px;
+  max-height: 100%;
+  object-fit: cover;
 `;
 
 export const SquareIcon = styled.img`
@@ -114,6 +117,13 @@ export const List = styled.ul`
     background: var(--colors-dark-1);
     border: 1px solid var(--colors-dark-3);
     width: 376px;
+    figure {
+      width: 100%;
+      max-width: 100%;
+      border: 1px solid red;
+      height: 200px;
+      max-height: 200px;
+    }
     overflow: hidden;
     &:hover ${ArticleImg} {
       animation: ${zoom} 0.2s ease-in forwards;

@@ -37,7 +37,6 @@ export const ProductsList = () => {
   const [showClothing, setShowClothing] = useState(false);
   const [selectedButtonColor, setSelectedButtonColor] = useState("none");
   const [selectedButtons, setSelectedButtons] = useState<string[]>([]);
-  const [hoveredButton, setHoveredButton] = useState("");
 
   const handleButtonClickColor = (buttonName: string) => {
     setSelectedButtonColor(

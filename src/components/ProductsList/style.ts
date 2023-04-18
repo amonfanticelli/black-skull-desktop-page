@@ -193,8 +193,8 @@ export const FlavorButtons = styled.button<IButtonProps>`
   text-transform: uppercase;
   padding: 6px;
   &:hover {
-    color: var(--colors-black);
-    border: 1px solid var(--colors-black);
+    color: var(--colors-dark-3);
+    border: 1px solid var(--colors-dark-3);
   }
 `;
 
@@ -246,8 +246,8 @@ export const ClothingButton = styled.button<IButtonProps>`
   text-transform: uppercase;
   padding: 6px;
   &:hover {
-    color: var(--colors-black);
-    border: 1px solid var(--colors-black);
+    color: var(--colors-dark-3);
+    border: 1px solid var(--colors-dark-3);
   }
 `;
 

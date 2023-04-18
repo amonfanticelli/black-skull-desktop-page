@@ -34,6 +34,7 @@ export const ArticleList = () => {
             src={firstArticle}
             alt="homem agachado segurando com duas mãos uma barra com uma anilha de cada lado dentro de uma academia"
           />
+
           <ArticleInfoContainer>
             <DateSpan>03.05.21</DateSpan>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
