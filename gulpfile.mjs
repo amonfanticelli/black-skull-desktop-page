@@ -1,29 +1,23 @@
 import gulp from "gulp";
-import babel from "gulp-babel";
 import gulpif from "gulp-if";
 import clean from "gulp-clean";
 import sourcemaps from "gulp-sourcemaps";
 import tinypng from "gulp-tinypng-compress";
+import typescript from "gulp-typescript";
+
+const tsProject = typescript.createProject("tsconfig.json");
 
 function cleanTask(done) {
   return gulp.src("dist", { allowEmpty: true }).pipe(clean(done));
 }
 
-function jsTask(done) {
+function tsTask(done) {
   const isDev = true;
 
   return gulp
-    .src("src/**/*.{js,jsx,ts,tsx}")
+    .src("src/**/*.{ts,tsx}")
     .pipe(gulpif(isDev, sourcemaps.init()))
-    .pipe(
-      babel({
-        presets: [
-          "@babel/preset-env",
-          "@babel/preset-react",
-          "@babel/preset-typescript",
-        ],
-      })
-    )
+    .pipe(tsProject())
     .pipe(gulpif(isDev, sourcemaps.write(".")))
     .pipe(gulp.dest("dist"))
     .on("end", done);
@@ -37,5 +31,5 @@ function imageTask() {
 }
 
 export default function defaultTask(done) {
-  return gulp.series(cleanTask, jsTask, imageTask)(done);
+  return gulp.series(cleanTask, tsTask, imageTask)(done);
 }
