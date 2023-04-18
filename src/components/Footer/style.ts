@@ -119,6 +119,18 @@ export const SubscribeContainer = styled.div`
       background: var(--colors-dark-1);
       border: 1px solid var(--colors-dark-3);
       border-radius: 4px;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+
+      /* Gray 1 */
+
+      color: #9a9a9a;
+      &:hover {
+        background-color: var(--colors-dark-3);
+      }
     }
     button {
       display: flex;

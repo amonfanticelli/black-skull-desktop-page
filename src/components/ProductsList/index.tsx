@@ -37,6 +37,7 @@ export const ProductsList = () => {
   const [showClothing, setShowClothing] = useState(false);
   const [selectedButtonColor, setSelectedButtonColor] = useState("none");
   const [selectedButtons, setSelectedButtons] = useState<string[]>([]);
+  const [hoveredButton, setHoveredButton] = useState("");
 
   const handleButtonClickColor = (buttonName: string) => {
     setSelectedButtonColor(
@@ -46,10 +47,8 @@ export const ProductsList = () => {
   const handleButtonClick = (buttonName: string) => {
     setSelectedButtons((prevSelectedButtons) => {
       if (prevSelectedButtons.includes(buttonName)) {
-        // If the clicked button was already selected, remove it from the array
         return prevSelectedButtons.filter((name) => name !== buttonName);
       } else {
-        // Otherwise, add the clicked button to the array
         return [...prevSelectedButtons, buttonName];
       }
     });
@@ -79,7 +78,6 @@ export const ProductsList = () => {
               <FlavorButtonsContainer>
                 <FlavorButtons
                   active={selectedButtons.includes("sabor1")}
-                  // active={selectedButton === "sabor1"}
                   onClick={() => handleButtonClick("sabor1")}
                 >
                   toffee
@@ -127,7 +125,6 @@ export const ProductsList = () => {
               <FlavorButtonsContainer>
                 <FlavorButtons
                   active={selectedButtons.includes("sabor5")}
-                  // active={selectedButton === "sabor1"}
                   onClick={() => handleButtonClick("sabor5")}
                 >
                   toffee
@@ -175,7 +172,6 @@ export const ProductsList = () => {
               <ClothingButtonsContainer>
                 <ClothingButton
                   active={selectedButtons.includes("size1")}
-                  // active={selectedButton === "sabor1"}
                   onClick={() => handleButtonClick("size1")}
                 >
                   p

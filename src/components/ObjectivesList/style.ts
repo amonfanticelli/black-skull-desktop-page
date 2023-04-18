@@ -14,7 +14,6 @@ const zoom = keyframes`
 `;
 
 export const AthleteImg = styled.img`
-  filter: grayscale(100%);
   max-height: 100%;
 `;
 
@@ -71,20 +70,18 @@ export const ObjectivesSection = styled.section`
 
       &:hover ${RectangularTraceLarge} {
         margin-left: 30px;
-        filter: brightness(115%);
       }
       &:hover ${RectangularTraceSmall} {
-        filter: brightness(115%);
         margin-left: 60px;
       }
 
       &:hover {
-        filter: grayscale(0%);
       }
       &:hover ${OrangeRectangle} {
         filter: brightness(115%);
       }
       &:hover ${AthleteImg} {
+        filter: hue-rotate(360deg) grayscale(0%);
         animation: ${zoom} 0.2s ease-in forwards;
       }
 
