@@ -74,7 +74,12 @@ export const ObjectivesSection = styled.section`
       &:hover ${RectangularTraceSmall} {
         margin-left: 60px;
       }
-
+      &:first-child ${RectangularTraceLarge} {
+        transition: none;
+      }
+      &:first-child ${RectangularTraceSmall} {
+        transition: none;
+      }
       &:hover {
       }
       &:hover ${OrangeRectangle} {
