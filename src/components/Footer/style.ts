@@ -58,6 +58,11 @@ export const PaymentAndSecurityContainer = styled.div`
 `;
 
 export const SubscribeContainer = styled.div`
+  @media screen and (max-width: 1279px) {
+    border: none;
+    height: 200px;
+    align-self: flex-end;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,6 +76,9 @@ export const SubscribeContainer = styled.div`
   padding-left: 44px;
   padding-right: 43px;
   h6 {
+    @media screen and (max-width: 1279px) {
+      display: none;
+    }
     width: 150px;
 
     font-family: var(--font-roboto-condensed);
@@ -93,6 +101,9 @@ export const SubscribeContainer = styled.div`
     }
   }
   p {
+    @media screen and (max-width: 1279px) {
+      display: none;
+    }
     font-family: var(--font-barlow);
     font-style: normal;
     font-weight: 400;
@@ -119,15 +130,12 @@ export const SubscribeContainer = styled.div`
       background: var(--colors-dark-1);
       border: 1px solid var(--colors-dark-3);
       border-radius: 4px;
-      font-family: "Barlow";
+      font-family: var(--font-barlow);
       font-style: normal;
       font-weight: 500;
       font-size: 12px;
       line-height: 14px;
-
-      /* Gray 1 */
-
-      color: #9a9a9a;
+      color: var(--colors-grey-1);
       &:hover {
         background-color: var(--colors-dark-3);
       }

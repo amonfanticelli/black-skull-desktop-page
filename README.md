@@ -13,7 +13,7 @@ Aplicação front-end para um e-commerce de suplementos, que tem como objetivo o
 - react-router-dom
 - gulp
 
-## Instruções de utilização:
+## Instruções de utilização da aplicação:
 
 `Para instalar as dependências utilize: npm install`
 
