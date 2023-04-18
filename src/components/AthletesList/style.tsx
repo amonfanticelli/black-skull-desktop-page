@@ -65,9 +65,13 @@ export const AthleteContainer = styled.div`
   background: var(--colors-dark-3);
   opacity: 0.9;
   position: absolute;
-  width: 0;
-  transition: 0.7s;
+  width: 10px;
+  /* overflow: hidden; */
+  transition: width 0.5s ease-in-out;
   bottom: 0;
+  &:hover {
+    width: 100%;
+  }
 
   span {
     font-family: var(--font-roboto-condensed);
@@ -141,6 +145,7 @@ export const ButtonViewAll = styled.button`
 `;
 
 export const ArrowRightImg = styled.img`
+  margin-left: 6px;
   width: 24px;
   height: 24px;
   filter: brightness(0) invert(1) saturate(0%);

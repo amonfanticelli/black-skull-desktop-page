@@ -30,7 +30,7 @@ export const List = styled.ul`
 
     &:hover {
       background-color: var(--colors-background);
-      transition: 0.3s;
+
       .flavor-container {
         display: flex;
         flex-direction: column;
@@ -136,8 +136,8 @@ export const BuyButton = styled.button`
   font-size: 16px;
   line-height: 20px;
   padding: 14px;
-  visibility: hidden; // Hide the button by default
-  transition: visibility 0.3s ease-in; // Add a transition effect
+  visibility: hidden;
+  transition: visibility ease-in;
   &:hover {
     background-color: var(--colors-orange-2);
   }
