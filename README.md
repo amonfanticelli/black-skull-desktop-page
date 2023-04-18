@@ -22,7 +22,7 @@ Aplicação front-end para um e-commerce de suplementos, que tem como objetivo o
 ## Utilizando a ferramenta gulp:
 
 Essa aplicação utiliza o gulp como um automatizador de tarefas para processar e transpilar todo o código-fonte em JavaScript (JS), JavaScript React (JSX), TypeScript (TS) e TypeScript React (TSX) em um único formato comum que qualquer navegador pode executar.
-`Para executar a ferramenta utilize o seguinte comando:gulp --gulpfile gulpfile.cjs`
+`Para executar a ferramenta utilize o seguinte comando:gulp --gulpfile gulpfile.mjs`
 
 ## Deploy Vercel:
 
